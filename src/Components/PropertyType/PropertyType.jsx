@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import Clients from "./Clients";
 
 const PropertyType = () => {
   const arr = [
@@ -82,6 +83,10 @@ const PropertyType = () => {
                 padding: "50px",
                 backgroundColor: "#f8f8f8",
                 gap: "10px",
+                transition:"background-color 0.3s ease",
+                "&:hover":{
+                  backgroundColor:"#e8e8e8"
+                }
               }}
             >
               <Box sx={{ marginBottom: "20px" }}>
@@ -106,6 +111,30 @@ const PropertyType = () => {
             </Box>
           ))}
         </Box>
+
+        <a href="https://www.youtube.com/watch?v=pPl3ZZdTP3g" target="_blank">
+          <Box sx={{ position: "relative" }}>
+            <Box
+              component="img"
+              src="https://cityscape.wowtheme7.com/assets/images/thumbs/video-popup.png"
+              width="100%"
+            ></Box>
+            <Box
+              className="flex justify-center items-center w-20 h-20 rounded-full"
+              sx={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%,-50%)",
+                backgroundColor: "#f58820",
+              }}
+            >
+              <i className="fa-solid fa-play text-white text-3xl"></i>{" "}
+            </Box>
+          </Box>
+        </a>
+
+        <Clients />
       </Box>
     </Box>
   );

@@ -5,6 +5,10 @@ import Nav from "./Components/Header/Nav";
 import Section from "./Components/FirstSection/Section";
 import Latest from "./Components/LatestProperty/Latest";
 import PropertyType from "./Components/PropertyType/PropertyType";
+import Quote from "./Components/Quote/Quote";
+import LatestPortfolio from "./Components/LatestPortfolio/LatestPortfolio";
+import LatestProduct from "./Components/LatestProduct/LatestProduct";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -13,7 +17,11 @@ const App = () => {
       <Nav />
       <Section />
       <Latest />
-      <PropertyType/>
+      <PropertyType />
+      <Quote />
+      <LatestPortfolio />
+      <LatestProduct />
+      <Footer />
     </div>
   );
 };
