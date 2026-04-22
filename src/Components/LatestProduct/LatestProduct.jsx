@@ -5,7 +5,7 @@ import ProductCard from "./ProductCard";
 
 const LatestProduct = () => {
   return (
-    <Box sx={{ padding: "8% 6%", backgroundColor: "#f7f7f7" }}>
+    <Box sx={{ padding: "8% 6%", backgroundColor: "#f7f7f7"}}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: "40px" }}>
         <Box
           sx={{

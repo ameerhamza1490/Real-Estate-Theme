@@ -10,7 +10,14 @@ const ProductCard = () => {
   ];
   return (
     <Box>
-      <Box sx={{ display: "flex", gap: "20px", cursor: "pointer" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { lg: "row", md: "column", sm: "column", xs: "column" },
+          gap: "20px",
+          cursor: "pointer",
+        }}
+      >
         {images.map((elem, index) => (
           <Box sx={{ overflow: "hidden" }}>
             <Box
@@ -82,152 +89,15 @@ const ProductCard = () => {
                   },
                 }}
               >
-                Read More <i className="fa-solid fa-plus" style={{color:"#f37f50"}}></i>
+                Read More{" "}
+                <i
+                  className="fa-solid fa-plus"
+                  style={{ color: "#f37f50" }}
+                ></i>
               </Typography>
             </Box>
           </Box>
         ))}
-
-        {/* <Box>
-          <Box
-            component="img"
-            src="https://i.pinimg.com/736x/d8/57/a5/d857a5572a7ef63b8592198085e78c5c.jpg"
-            sx={{ width: "100%", height: "40vh" }}
-          ></Box>
-          <Box
-            sx={{
-              padding: "30px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "30px",
-              border: "2px solid #d1d5dc",
-            }}
-          >
-            <Typography variant="body1">
-              <span
-                className="border-gray-300 rounded border-2 text-gray-400"
-                style={{ padding: "15px", fontSize: "14px" }}
-              >
-                <span style={{ paddingRight: "20px" }}>
-                  {" "}
-                  <i
-                    className="ri-admin-fill text-black"
-                    style={{ paddingRight: "5px" }}
-                  ></i>
-                  By Admin
-                </span>
-                <span>
-                  {" "}
-                  <i
-                    className="ri-chat-3-fill text-black"
-                    style={{ paddingRight: "5px" }}
-                  ></i>
-                  Comments
-                </span>
-              </span>
-            </Typography>
-            <Typography variant="h5">
-              Discover Endless Possibilities in Real Estate Live Your Best Life
-            </Typography>
-            <Typography className="uppercase" sx={{ fontSize: "15px" }}>
-              Read More
-            </Typography>
-          </Box>
-        </Box>
-
-        <Box>
-          <Box
-            component="img"
-            src="https://i.pinimg.com/736x/d8/57/a5/d857a5572a7ef63b8592198085e78c5c.jpg"
-            sx={{ width: "100%", height: "40vh" }}
-          ></Box>
-          <Box
-            sx={{
-              padding: "30px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "30px",
-              border: "2px solid #d1d5dc",
-            }}
-          >
-            <Typography variant="body1">
-              <span
-                className="border-gray-300 rounded border-2 text-gray-400"
-                style={{ padding: "15px", fontSize: "14px" }}
-              >
-                <span style={{ paddingRight: "20px" }}>
-                  {" "}
-                  <i
-                    className="ri-admin-fill text-black"
-                    style={{ paddingRight: "5px" }}
-                  ></i>
-                  By Admin
-                </span>
-                <span>
-                  {" "}
-                  <i
-                    className="ri-chat-3-fill text-black"
-                    style={{ paddingRight: "5px" }}
-                  ></i>
-                  Comments
-                </span>
-              </span>
-            </Typography>
-            <Typography variant="h5">
-              Discover Endless Possibilities in Real Estate Live Your Best Life
-            </Typography>
-            <Typography className="uppercase" sx={{ fontSize: "15px" }}>
-              Read More
-            </Typography>
-          </Box>
-        </Box>
-
-        <Box>
-          <Box
-            component="img"
-            src="https://i.pinimg.com/736x/d8/57/a5/d857a5572a7ef63b8592198085e78c5c.jpg"
-            sx={{ width: "100%", height: "40vh" }}
-          ></Box>
-          <Box
-            sx={{
-              padding: "30px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "30px",
-              border: "2px solid #d1d5dc",
-            }}
-          >
-            <Typography variant="body1">
-              <span
-                className="border-gray-300 rounded border-2 text-gray-400"
-                style={{ padding: "15px", fontSize: "14px" }}
-              >
-                <span style={{ paddingRight: "20px" }}>
-                  {" "}
-                  <i
-                    className="ri-admin-fill text-black"
-                    style={{ paddingRight: "5px" }}
-                  ></i>
-                  By Admin
-                </span>
-                <span>
-                  {" "}
-                  <i
-                    className="ri-chat-3-fill text-black"
-                    style={{ paddingRight: "5px" }}
-                  ></i>
-                  Comments
-                </span>
-              </span>
-            </Typography>
-            <Typography variant="h5">
-              Discover Endless Possibilities in Real Estate Live Your Best Life
-            </Typography>
-            <Typography className="uppercase" sx={{ fontSize: "15px" }}>
-              Read More
-            </Typography>
-          </Box>
-        </Box> */}
       </Box>
     </Box>
   );

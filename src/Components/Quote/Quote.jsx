@@ -4,19 +4,23 @@ import QuoteForm from "./QuoteForm";
 const Quote = () => {
   return (
     <Box>
-      <Box sx={{ position: "relative",  backgroundColor:"#f7f7f7" }}>
+      <Box sx={{ position: "relative", backgroundColor: "#f7f7f7" }}>
         <Box
           component="img"
           src="https://cityscape.wowtheme7.com/assets/message-img-C3fho8PI.png"
         ></Box>
         <Box
           sx={{
-            position: "absolute",
+            position: {
+              lg: "absolute",
+              md: "absolute",
+              sm: "static",
+              xs: "static",
+            },
             top: "15%",
             right: "5%",
             backgroundColor: "white",
-            // width:"40%",
-            borderRadius:"10px",
+            borderRadius: "10px",
             boxShadow: (theme) => theme.shadows[5],
           }}
         >

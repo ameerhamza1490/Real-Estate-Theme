@@ -17,12 +17,13 @@ const QuoteForm = () => {
         </Typography>
         <Box component="form">
           <Box sx={{ display: "flex", flexDirection: "column", gap: "50px" }}>
-            <Box sx={{ display: "flex", gap: "40px" }}>
-              <TextField label="Name" type="text" variant="outlined" required />
+            <Box sx={{ display: "flex", justifyContent:"space-between", gap:"50px" }}>
+              <TextField label="Name" type="text" variant="outlined" fullWidth required />
               <TextField
                 label="Your Phone"
                 type="text"
                 variant="outlined"
+                fullWidth
                 required
               />
             </Box>
@@ -38,12 +39,14 @@ const QuoteForm = () => {
                 label="Email"
                 type="email"
                 variant="outlined"
+                fullWidth
                 required
               />
               <TextField
                 label="Your Address"
                 type="text"
                 variant="outlined"
+                fullWidth
                 required
               />
             </Box>

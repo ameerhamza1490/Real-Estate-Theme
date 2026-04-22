@@ -16,7 +16,7 @@ const LatestPortfolio = () => {
   return (
     <Box
       sx={{
-        padding: "8% 0%",
+        padding: {lg:"8% 0%", md:"12.5% 0%", sm:"8% 0%", xs:"8% 0%"},
         backgroundColor: "#f7f7f7",
         display: "flex",
         flexDirection: "column",
@@ -38,7 +38,7 @@ const LatestPortfolio = () => {
         >
           Latest Portfolio
         </Typography>
-        <Typography variant="h3" sx={{ textAlign: "center" }}>
+        <Typography variant="h3" sx={{ textAlign: "center", fontSize:{lg:"4rem",md:"3.5rem", sm:"3rem", xs:"2rem"} }}>
           Optimum Homes & Properties <br /> Realty Experts
         </Typography>
       </Box>
@@ -63,7 +63,7 @@ const LatestPortfolio = () => {
             component="img"
             src={elem}
             sx={{
-              height: "75vh",
+              height: {lg:"70vh",md:"60vh",sm:"50vh", xs:"40vh"},
               width: "auto", // Width auto rakho taaki aspect ratio maintain ho
               minWidth: "300px", // Minimum width set karo
               flexShrink: 0, // Images ko shrink hone se roko
