@@ -24,7 +24,6 @@ const Nav = () => {
           <span>Karachi, Pakistan</span>
         </div>
       </div>
-      <ResponsiveAppBar />
     </div>
   );
 };

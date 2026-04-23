@@ -6,7 +6,14 @@ const Top = () => {
     <div>
       <div
         className="flex justify-between"
-        style={{ backgroundColor: "#262626", padding: "15px 2%" }}
+        style={{
+          backgroundColor: "#262626",
+          padding: "15px 2%",
+          position: "fixed",
+          width: "100%",
+          top: "0",
+          zIndex: 10,
+        }}
       >
         <div>
           <h1
@@ -20,6 +27,7 @@ const Top = () => {
           Buy now
         </Button>
       </div>
+      <div style={{ height: "70px" }}></div>
     </div>
   );
 };

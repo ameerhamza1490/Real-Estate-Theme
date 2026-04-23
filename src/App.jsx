@@ -9,12 +9,14 @@ import Quote from "./Components/Quote/Quote";
 import LatestPortfolio from "./Components/LatestPortfolio/LatestPortfolio";
 import LatestProduct from "./Components/LatestProduct/LatestProduct";
 import Footer from "./Components/Footer/Footer";
+import ResponsiveAppBar from "./Components/Header/ResponsiveAppBar";
 
 const App = () => {
   return (
     <div>
       <Top />
       <Nav />
+      <ResponsiveAppBar/>
       <Section />
       <Latest />
       <PropertyType />

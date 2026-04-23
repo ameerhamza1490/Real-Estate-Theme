@@ -24,7 +24,17 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar sx={{ backgroundColor: "transparent", padding: "15px 4%"  }} elevation={0} position="static">
+    <AppBar
+      position="sticky"
+      sx={{
+        backgroundColor: "white",
+        padding: "15px 4%",
+        top: "60px",
+        zIndex: 9,
+       
+      }}
+      elevation={0}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ display: "flex", alignItems: "center" }}>
           <Box
@@ -58,7 +68,7 @@ function ResponsiveAppBar() {
               color="black"
               sx={{
                 color: "black",
-                ml: "auto", 
+                ml: "auto",
               }}
             >
               <MenuIcon />
@@ -116,7 +126,11 @@ function ResponsiveAppBar() {
                 display: { xs: "none", md: "flex" },
               }}
             >
-              Sell Property <i className="ri-arrow-right-line" style={{color:"#f26921", fontSize:"25px"}}></i>
+              Sell Property{" "}
+              <i
+                className="ri-arrow-right-line"
+                style={{ color: "#f26921", fontSize: "25px" }}
+              ></i>
             </Button>
           </Box>
         </Toolbar>
